@@ -17,13 +17,8 @@ public class PowerSetData {
     }
 
 
-    /**
-    Method:
-    Inputs: String, a list of strings with space separating each element
-    Returns: an array of string from the original string
-
-    Description: read numbers from input to array myArray duplicates should be removed
-    */
+    // read numbers from input to array myArray
+    // duplicates should be removed
     public void initializeArray(String string) throws NumberFormatException,
     NoSuchElementException, NegativeArraySizeException{
 
