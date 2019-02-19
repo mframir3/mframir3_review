@@ -118,21 +118,21 @@ public class PowerSet
         
     /**
      * Generates a power set from a given array
-     * @param S the array to from which powerset is to be generated
+     * @param input the array to from which powerset is to be generated
      * @exception NullPointerException if <code>S</code> 
      * is not initialized
      */
     // implementation 3
-        public static Set<Set<Integer>> powerSetImplementation3(int[] S) 
+        public static Set<Set<Integer>> powerSetImplementation3(int[] input) 
         {
-        	if(S == null) 
+        	if(input == null) 
         	{
         		return new HashSet<Set<Integer>>();
         	}
             List<Integer> arrayList = new ArrayList<Integer>();
-            for (int index = 0; index < S.length; index++)
+            for (int index = 0; index < input.length; index++)
             {
-                arrayList.add(S[index]);
+                arrayList.add(input[index]);
             }
             Set<Set<Integer>> ps = new HashSet<Set<Integer>>();
               ps.add(new HashSet<Integer>());   // add the empty set
